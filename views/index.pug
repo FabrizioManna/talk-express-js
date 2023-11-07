@@ -1,0 +1,25 @@
+doctype html
+html
+    head
+        title Guestbook Expressjs
+        link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+
+    body
+        .container
+            .row.justify-content-center.mt-5
+                .col-md-8
+                    h1.text-center Express Guestbook
+                    table.table.table-bordered.table-striped.mt-3
+                        thead
+                            tr
+                                th Nome
+                                th Messaggio
+                        tbody
+                            each entry in guestbook
+                                tr
+                                    td= entry.name
+                                    td= entry.message
+
+    script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js', integrity='sha384-KyZXEAg3QhqLMpG8r+Z6I7lIpFv3w5OZ/+JhxZ1k2b+EmT6F5aW6gqBcky8a6W7FD', crossorigin='anonymous')
+    script(src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js', integrity='sha384-wHA8eb8d6U6D5CW5rZ5P5Xn5uuJ2veU9jqR5Yhv5b5Uq1C6BzV5z5A5F5P5I5j5t5j', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js', integrity='sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+d5ue5t8ST3/t/bzR8FB7zF5b5', crossorigin='anonymous')

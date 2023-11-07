@@ -6,7 +6,7 @@ Un semplice guestbook realizzato con ExpressJS e Bootstrap.
 
 1. Avvia i servizi con `docker-compose up --build`.
 2. Installa le dipendenze con `npm install`.
-3. Avvia il progetto in modalità sviluppo  `npm install`.
+3. Avvia il progetto in modalità sviluppo  `npm run dev`.
 
 ## Uso
 
